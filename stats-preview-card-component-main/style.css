@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lexend+Deca:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: hsl(233, 47%, 7%);
+    font-size: 15px;
+}
+
+ body .bdy{
+    background: hsl(244, 38%, 16%);
+    position: absolute;
+    top: 20%;
+    left: 14%;
+    right: 20%;
+    height: 350px;
+    width: 700px;
+    z-index: 10;
+    margin:20px 5 5 20px;
+}
+
+.bdy .text-body{
+    position: absolute;
+    top: 17%;
+    left: 10%;
+}
+
+.bdy .write{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.bdy .write .text{
+    color: hsl(277, 64%, 61%);
+    font-weight: 700;
+}
+
+.bdy .menu{
+    list-style: none;
+    display: flex;
+    margin: 0 10px;
+}
+
+.bdy .img{
+    height: 49.7vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    left: 55%;
+    top: 0%;
+
+}
+
+.bdy .img::before{
+    content: '';
+    position: absolute;
+    height: 58vh;
+    width: 60.5%;
+    background:hsla(277, 84%, 27%, 0.5) 
+  }
+
+  .bdy .about{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+    word-spacing: 0.1rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    line-height: 1.1rem;
+  }
+
+.attribution{
+    color: white;
+    position: absolute;
+    margin-top: 550px;
+}
+
+@media screen and (max-width:375px){
+    body{
+        height: 200px;
+        width: 20%;
+    }
+     body .bdy{
+        width: 400;
+        height: 346px;
+        margin: 0;
+        padding: 0;
+    } 
+    .bdy .img{
+        width: 86.5%;
+        height: 3vh;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        left: 55%;
+        top: 0%;
+    }
+    .bdy .img::before{
+        content: '';
+        position: absolute;
+        height: 70vh;
+        width: 70%;
+        background:hsla(277, 84%, 27%, 0.5) 
+      }
+    
+}
+
+@media screen and (min-width:1440px) {
+    .bdy .img{
+    height: 49.7vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    left: 55%;
+    top: 0%;
+}
+
+}
